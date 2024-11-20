@@ -6,7 +6,7 @@
         <img src="{{ asset('images/banner_limit.png') }}" alt="Kalkulus Limit" class="w-100 mb-4">
         <div class="px-5">
     
-            <h2 class="mb-4" style="font-size: 55px">Kalkulus Limit - Pengertian, Rumus,<br>Contoh Soal, dan Jawaban</h2>        
+            <h2 class="mb-4" style="font-size: 55px">Kalkulus Limit Fungsi — Pengertian dan Sifat-sifatnya</h2>
     
             <div class="section mb-5">
                 <h3 class="section-title">Apa itu Limit?</h3>
@@ -14,7 +14,7 @@
                 
                 <p>Limit dari suatu fungsi menggambarkan nilai yang didekati oleh fungsi tersebut saat variabelnya mendekati nilai tertentu. Dalam notasi matematika, limit dari fungsi <em>f(x)</em> saat <em>x</em> mendekati <em>a</em> dapat dituliskan sebagai:</p>
                 <div class="notation bg-light p-3 my-3 rounded">
-                    <code>lim<sub>x→a</sub> f(x) = L</code>
+                    <pre class="m-0"><code>lim<sub>x→a</sub> f(x) = L</code></pre>
                 </div>
                 <p>Artinya, ketika x mendekati a, maka nilai fungsi f(x) akan mendekati nilai L, jika L adalah nilai limitnya.</p>
 
@@ -78,7 +78,7 @@
                 
                 <p>Dari tabel di atas dapat dilihat, apabila nilai x semakin “dekat” dengan 0, maka f(x) akan semakin “dekat” dengan 1. Dengan catatan bahwa f(0) = 1 adalah sebuah kebetulan. Dengan grafik, dapat digambarkan sebagai berikut.</p>
 
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center mb-5">
                     <img src="{{ asset('images/graphic.png') }}" alt="Grafik" class="img-fluid">
                 </div>
                 
@@ -145,20 +145,6 @@
                       </ul>
                   </li>
               </ol>
-            </div>
-    
-            <!-- Contoh Soal -->
-            <div class="section mb-5">
-                <h4 class="section-title">Contoh Soal</h4>
-                <p>Cari limit dari fungsi berikut:</p>
-                <div class="problem bg-light p-3 my-3 rounded">
-                    <code>lim<sub>x→3</sub> (2x + 5)</code>
-                </div>
-                <p>Untuk menyelesaikan ini, cukup substitusi <em>x = 3</em> ke dalam fungsi:</p>
-                <div class="solution bg-light p-3 my-3 rounded">
-                    <code>lim<sub>x→3</sub> (2x + 5) = 2(3) + 5 = 11</code>
-                </div>
-                <p>Jadi, limitnya adalah 11.</p>
             </div>
         </div>
     </div>
