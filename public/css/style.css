@@ -26,10 +26,6 @@ h3, h4 {
     font-size: 1.8rem;
 }
 
-code {
-    font-size: 1.2rem;
-}
-
 .main-title {
     font-size: 3rem;
     font-weight: 700;
@@ -63,19 +59,25 @@ code {
     font-size: 2.5rem;
     font-weight: 700;
     color: #2c3e50;
-    border-bottom: 2px solid #007BFF; /* Tambahkan garis bawah untuk penekanan */
+    border-bottom: 2px solid #007BFF;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
 .notation, .problem, .solution {
+    font-family: "KaTeX_Main", serif !important;
+    font-size: 1.1em !important;
+    display: flex;
+    justify-content: left !important;
+}
+
+.problem, .solution {
     border-left: 6px solid #007BFF;
-    background-color: #f1f7ff;
-    padding: 20px;
-    border-radius: 8px;
-    font-family: 'Courier New', monospace;
-    margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.solution-2 {
+    font-size: 0.9em !important;
 }
 
 .table {
@@ -83,13 +85,14 @@ code {
     margin-top: 20px;
     margin-bottom: 30px;
     border-collapse: collapse;
+    font-family: "KaTeX_Main", serif !important;
 }
 
 .table thead th {
     background-color: #6C757D;
     color: #ffffff;
     padding: 12px 15px;
-    font-size: 1.2rem;
+    font-size: 1.2em;
 }
 
 .table tbody tr {
@@ -103,7 +106,6 @@ code {
 .table td, .table th {
     text-align: center;
     padding: 12px;
-    font-size: 1.2rem;
 }
 
 img {
@@ -139,6 +141,16 @@ img {
 .btn-link.active-tab {
     color: #0056b3;
     border-bottom: 3px solid #0056b3;
+}
+
+.example {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.example pre {
+    margin: 0;
 }
 
 @media (max-width: 768px) {
