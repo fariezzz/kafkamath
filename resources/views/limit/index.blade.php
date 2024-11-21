@@ -12,28 +12,28 @@
                 <h3 class="section-title">Apa itu Limit?</h3>
                 <p>Limit memiliki arti kata yaitu batas, membatasi, mempersempit, atau mendekatkan. Dalam kehidupan sehari-hari, orang sering dihadapkan pada masalah-masalah pendekatan suatu nilai/besaran.</p>
                 
-                <p>Limit dari suatu fungsi menggambarkan nilai yang didekati oleh fungsi tersebut saat variabelnya mendekati nilai tertentu. Dalam notasi matematika, limit dari fungsi <em>f(x)</em> saat <em>x</em> mendekati <em>a</em> dapat dituliskan sebagai:</p>
-                <div class="notation bg-light p-3 my-3 rounded">
-                    <pre class="m-0"><code>lim<sub>x→a</sub> f(x) = L</code></pre>
+                <div>Limit dari suatu fungsi menggambarkan nilai yang didekati oleh fungsi tersebut saat variabelnya mendekati nilai tertentu. Dalam notasi matematika, limit dari fungsi  \(f(x)\) saat \(x\) mendekati \(a\) dapat dituliskan sebagai:</div>
+                <div class="notation mx-3">
+                    \[\lim_{x \to a} f(x) = L\]
                 </div>
-                <p>Artinya, ketika x mendekati a, maka nilai fungsi f(x) akan mendekati nilai L, jika L adalah nilai limitnya.</p>
+                <p>Artinya, ketika \(x\) mendekati \(a\), maka nilai fungsi \(f(x)\) akan mendekati nilai \(L\), jika \(L\) adalah nilai limitnya.</p>
 
-                <p>Limit tidak mempermasalahkan nilai fungsi f(x) tepat di x = c, melainkan hanya memperhatikan perilaku f(x) saat x berada sangat dekat dengan c.</p>
+                <p>Limit tidak mempermasalahkan nilai fungsi \(f(x)\) tepat di \(x = c\), melainkan hanya memperhatikan perilaku \(f(x)\) saat \(x\) berada sangat dekat dengan \(c\).</p>
 
                 <b>Contoh:</b>
-                <div><em>Diberikan f(x) = x + 1</em></div>
-                <p class="mx-4">Berapa nilai f(x) saat x, “sangat dekat” dengan 0?</p>
+                <div>Diberikan \(f(x) = x + 1\)</div>
+                <p class="mx-4">Berapa nilai \(f(x)\) saat \(x\), “sangat dekat” dengan \(0\)?</p>
 
-                <p>Nilai eksak yang menjadi jawaban pertanyaan di atas sulit ditentukan, bahkan tidak mungkin. Mengapa demikian? Karena kita tidak dapat memberikan kepastian nilai x yang dimaksud. Meskipun demikian, nilai pendekatan untuk yang dimaksud bisa ditentukan.</p>
+                <p>Nilai eksak yang menjadi jawaban pertanyaan di atas sulit ditentukan, bahkan tidak mungkin. Mengapa demikian? Karena kita tidak dapat memberikan kepastian nilai \(x\) yang dimaksud. Meskipun demikian, nilai pendekatan untuk yang dimaksud bisa ditentukan.</p>
 
                 <p>Perhatikan tabel berikut:</p>
                 <table class="table table-bordered border-dark w-100 text-center">
                     <thead class="table-secondary">
                         <tr>
-                            <th style="width: 25%;">x</th>
-                            <th style="width: 25%;">f(x)</th>
-                            <th style="width: 25%;">x</th>
-                            <th style="width: 25%;">f(x)</th>
+                            <th style="width: 25%;">\(x\)</th>
+                            <th style="width: 25%;">\(f(x)\)</th>
+                            <th style="width: 25%;">\(x\)</th>
+                            <th style="width: 25%;">\(f(x)\)</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -76,75 +76,85 @@
                     </tbody>
                 </table>
                 
-                <p>Dari tabel di atas dapat dilihat, apabila nilai x semakin “dekat” dengan 0, maka f(x) akan semakin “dekat” dengan 1. Dengan catatan bahwa f(0) = 1 adalah sebuah kebetulan. Dengan grafik, dapat digambarkan sebagai berikut.</p>
+                <p>Dari tabel di atas dapat dilihat, apabila nilai \(x\) semakin “dekat” dengan \(0\), maka \(f(x)\) akan semakin “dekat” dengan \(1\). Dengan catatan bahwa \(f(0) = 1\) adalah sebuah kebetulan. Dengan grafik, dapat digambarkan sebagai berikut.</p>
 
                 <div class="d-flex justify-content-center mb-5">
                     <img src="{{ asset('images/graphic.png') }}" alt="Grafik" class="img-fluid">
                 </div>
                 
-                <p>Dari grafik dapat dilihat, apabila x sangat “dekat” dengan 0, baik untuk x < 0 maupun untuk x > 0, maka f(x) sangat “dekat” dengan 1.</p>
+                <p>Dari grafik dapat dilihat, apabila \(x\) sangat “dekat” dengan \(0\), baik untuk \(x < 0\) maupun untuk \(x > 0\), maka \(f(x)\) sangat “dekat” dengan \(1\).</p>
             </div>
 
             <div class="section mb-5">
-              <h4 class="section-title">Sifat-Sifat Dasar Limit Fungsi</h4>
-              <p>Berikut adalah beberapa sifat dasar limit fungsi yang sering digunakan dalam kalkulus:</p>
-              <ol>
-                  <li class="mb-3">
-                      <code>lim<sub>x→c</sub> k = k</code>
-                      <p>Limit dari sebuah konstanta adalah konstanta itu sendiri.</p>
-                      <p><b>Contoh:</b> <code>lim<sub>x→2</sub> 5 = 5</code></p>
-                  </li>
-                  <li class="mb-3">
-                      <code>lim<sub>x→c</sub> x = c</code>
-                      <p>Limit dari variabel <em>x</em> saat mendekati <em>c</em> adalah <em>c</em>.</p>
-                      <p><b>Contoh:</b> <code>lim<sub>x→3</sub> x = 3</code></p>
-                  </li>
-                  <li class="mb-3">
-                      <p>Jika <code>lim<sub>x→c</sub> f(x)</code> dan <code>lim<sub>x→c</sub> g(x)</code> ada, serta <code>k ∈ R</code>, maka:</p>
-                      <ul>
-                          <li class="mb-3">
-                              <code>lim<sub>x→c</sub> [f(x) + g(x)] = lim<sub>x→c</sub> f(x) + lim<sub>x→c</sub> g(x)</code>
-                              <p>Limit penjumlahan fungsi sama dengan jumlah dari limit masing-masing fungsi.</p>
-                              <p><b>Contoh:</b> <code>lim<sub>x→2</sub> (x + 3) = lim<sub>x→2</sub> x + lim<sub>x→2</sub> 3 = 2 + 3 = 5</code></p>
-                          </li>
-                          <li class="mb-3">
-                              <code>lim<sub>x→c</sub> [k * f(x)] = k * lim<sub>x→c</sub> f(x)</code>
-                              <p>Limit dari sebuah fungsi yang dikalikan konstanta adalah konstanta tersebut dikalikan dengan limit fungsi.</p>
-                              <p><b>Contoh:</b> <code>lim<sub>x→1</sub> 3x = 3 * lim<sub>x→1</sub> x = 3 * 1 = 3</code></p>
-                          </li>
-                          <li class="mb-3">
-                              <code>lim<sub>x→c</sub> [f(x) * g(x)] = lim<sub>x→c</sub> f(x) * lim<sub>x→c</sub> g(x)</code>
-                              <p>Limit perkalian fungsi sama dengan hasil kali dari limit masing-masing fungsi.</p>
-                              <p><b>Contoh:</b> <code>lim<sub>x→2</sub> (x * (x + 1)) = lim<sub>x→2</sub> x * lim<sub>x→2</sub> (x + 1) = 2 * 3 = 6</code></p>
-                          </li>
-                          <li class="mb-3">
-                              <code>lim<sub>x→c</sub> [f(x) / g(x)] = lim<sub>x→c</sub> f(x) / lim<sub>x→c</sub> g(x)</code>, dengan syarat <code>lim<sub>x→c</sub> g(x) ≠ 0</code>.
-                              <p>Limit pembagian fungsi sama dengan hasil pembagian dari limit masing-masing fungsi.</p>
-                              <p><b>Contoh:</b> <code>lim<sub>x→2</sub> (x / (x + 1)) = lim<sub>x→2</sub> x / lim<sub>x→2</sub> (x + 1) = 2 / 3</code></p>
-                          </li>
-                      </ul>
-                  </li>
-                  <li class="mb-3">
-                      <p>Untuk <code>n</code> bilangan asli:</p>
-                      <ul>
-                          <li class="mb-3">
-                              <code>lim<sub>x→c</sub> [f(x)]<sup>n</sup> = [lim<sub>x→c</sub> f(x)]<sup>n</sup></code>
-                              <p>Limit fungsi berpangkat <em>n</em> sama dengan hasil pangkat dari limit fungsi.</p>
-                              <p><b>Contoh:</b> <code>lim<sub>x→2</sub> (x<sup>2</sup>) = (lim<sub>x→2</sub> x)<sup>2</sup> = 2<sup>2</sup> = 4</code></p>
-                          </li>
-                          <li class="mb-3">
-                              <code>lim<sub>x→c</sub> [f(x)]<sup>-n</sup> = [lim<sub>x→c</sub> f(x)]<sup>-n</sup></code>, dengan syarat <code>lim<sub>x→c</sub> f(x) ≠ 0</code>.
-                              <p>Limit fungsi berpangkat negatif sama dengan kebalikan dari hasil pangkat positifnya.</p>
-                              <p><b>Contoh:</b> <code>lim<sub>x→2</sub> (x<sup>-1</sup>) = (lim<sub>x→2</sub> x)<sup>-1</sup> = 1/2</code></p>
-                          </li>
-                          <li class="mb-3">
-                              <code>lim<sub>x→c</sub> [f(x)]<sup>1/n</sup> = [lim<sub>x→c</sub> f(x)]<sup>1/n</sup></code>, dengan syarat <code>n</code> genap dan <code>lim<sub>x→c</sub> f(x) ≥ 0</code>.
-                              <p>Limit fungsi berpangkat pecahan sama dengan akar dari hasil limit fungsi.</p>
-                              <p><b>Contoh:</b> <code>lim<sub>x→4</sub> √x = √(lim<sub>x→4</sub> x) = √4 = 2</code></p>
-                          </li>
-                      </ul>
-                  </li>
-              </ol>
+                <h4 class="section-title">Sifat-Sifat Dasar Limit Fungsi</h4>
+                <p>Berikut adalah beberapa sifat dasar limit fungsi yang sering digunakan dalam kalkulus:</p>
+                <ol>
+                    <li class="mb-3">
+                        <div>Limit dari sebuah konstanta adalah konstanta itu sendiri.</div>
+                        <div class="notation">
+                            \[\lim_{x \to c} k = k\]
+                        </div>
+                        <div class="notation d-inline">
+                            <span>Contoh:</span>
+                            \(\lim_{x \to 2} 5 = 5\)
+                        </div>                 
+                    </li>
+                    <li class="mb-3">
+                        <div>Limit dari variabel \(x\) saat mendekati \(c\) adalah \(c\).</div>
+                        <div class="notation">
+                            \[\lim_{x \to c} x = c\]
+                        </div>
+                        <div class="notation d-inline">
+                            <span>Contoh:</span>
+                            \(\lim_{x \to 3} x = 3\)
+                        </div>
+                    </li>
+                    <li class="mb-3">
+                        <div>Jika \(\lim_{x \to c} f(x)\) dan \(\lim_{x \to c} g(x)\) ada, serta \(k \in R\), maka:</div>
+                        <ul>
+                            <li class="mb-4">
+                                <div class="mt-3">Limit penjumlahan fungsi sama dengan jumlah dari limit masing-masing fungsi.</div>
+                                <div class="notation">
+                                    \[\lim_{x \to c} [f(x) + g(x)] = \lim_{x \to c} f(x) + \lim_{x \to c} g(x)\]
+                                </div>
+                                <div class="notation d-inline">
+                                    <span>Contoh:</span>
+                                    \(\lim_{x \to 2} (x + 3) = \lim_{x \to 2} x + \lim_{x \to 2} 3 = 2 + 3 = 5\)
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div>Limit dari sebuah fungsi yang dikalikan konstanta adalah konstanta tersebut dikalikan dengan limit fungsi.</div>
+                                <div class="notation">
+                                    \[\lim_{x \to c} [k \cdot f(x)] = k \cdot \lim_{x \to c} f(x)\]
+                                </div>
+                                <div class="notation d-inline">
+                                    <span>Contoh:</span>
+                                    \(\lim_{x \to 1} 3x = 3 \cdot \lim_{x \to 1} x = 3 \cdot 1 = 3\)
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div>Limit perkalian fungsi sama dengan hasil kali dari limit masing-masing fungsi.</div>
+                                <div class="notation">
+                                    \[\lim_{x \to c} [f(x) \cdot g(x)] = \lim_{x \to c} f(x) \cdot \lim_{x \to c} g(x)\]
+                                </div>
+                                <div class="notation d-inline">
+                                    <span>Contoh:</span>
+                                    \(\lim_{x \to 2} (x \cdot (x + 1)) = \lim_{x \to 2} x \cdot \lim_{x \to 2} (x + 1) = 2 \cdot 3 = 6\)
+                                </div>
+                            </li>
+                            <li class="mb-3">
+                                <div>Limit pembagian fungsi sama dengan hasil pembagian dari limit masing-masing fungsi.</div>
+                                <div class="notation">
+                                    \[\lim_{x \to c} \frac{f(x)}{g(x)} = \frac{\lim_{x \to c} f(x)}{\lim_{x \to c} g(x)}\]
+                                </div>
+                                <div class="notation d-inline">
+                                    <span>Contoh:</span>
+                                    \(\lim_{x \to 2} \frac{x}{x + 1} = \frac{\lim_{x \to 2} x}{\lim_{x \to 2} (x + 1)} = \frac{2}{3}\)
+                                </div>
+                            </li>
+                        </ul>
+                    </li>                        
+                </ol>
             </div>
         </div>
     </div>
