@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-<div id="unique-container" class="unique-container my-0">
+<div id="unique-container" class="container my-2">
     <div id="unique-container-2" class="content-wrapper bg-white p-2 shadow rounded">
         <img src="{{ asset('images/banner_limit.png') }}" alt="Kalkulus Limit" class="limit-banner w-100 mb-4">
         <div class="px-5">
@@ -109,69 +109,64 @@
                             \(\lim_{x \to 3} x = 3\)
                         </div>
                     </li>
+                    <li class="mb-4">
+                        <div class="mt-3">Limit penjumlahan fungsi sama dengan jumlah dari limit masing-masing fungsi.</div>
+                        <div class="notation">
+                            \[\lim_{x \to c} [f(x) + g(x)] = \lim_{x \to c} f(x) + \lim_{x \to c} g(x)\]
+                        </div>
+                        <div class="notation d-inline">
+                            <span>Contoh:</span>
+                            \(\lim_{x \to 2} (x + 3) = \lim_{x \to 2} x + \lim_{x \to 2} 3 = 2 + 3 = 5\)
+                        </div>
+                    </li>  
                     <li class="mb-3">
-                        <div>Jika \(\lim_{x \to c} f(x)\) dan \(\lim_{x \to c} g(x)\) ada, serta \(k \in R\), maka:</div>
-                        <ul>
-                            <li class="mb-4">
-                                <div class="mt-3">Limit penjumlahan fungsi sama dengan jumlah dari limit masing-masing fungsi.</div>
-                                <div class="notation">
-                                    \[\lim_{x \to c} [f(x) + g(x)] = \lim_{x \to c} f(x) + \lim_{x \to c} g(x)\]
-                                </div>
-                                <div class="notation d-inline">
-                                    <span>Contoh:</span>
-                                    \(\lim_{x \to 2} (x + 3) = \lim_{x \to 2} x + \lim_{x \to 2} 3 = 2 + 3 = 5\)
-                                </div>
-                            </li>
-                            <li class="mb-3">
-                                <div>Limit dari sebuah fungsi yang dikalikan konstanta adalah konstanta tersebut dikalikan dengan limit fungsi.</div>
-                                <div class="notation">
-                                    \[\lim_{x \to c} [k \cdot f(x)] = k \cdot \lim_{x \to c} f(x)\]
-                                </div>
-                                <div class="notation d-inline">
-                                    <span>Contoh:</span>
-                                    \(\lim_{x \to 1} 3x = 3 \cdot \lim_{x \to 1} x = 3 \cdot 1 = 3\)
-                                </div>
-                            </li>
-                            <li class="mb-3">
-                                <div>Limit perkalian fungsi sama dengan hasil kali dari limit masing-masing fungsi.</div>
-                                <div class="notation">
-                                    \[\lim_{x \to c} [f(x) \cdot g(x)] = \lim_{x \to c} f(x) \cdot \lim_{x \to c} g(x)\]
-                                </div>
-                                <div class="notation d-inline">
-                                    <span>Contoh:</span>
-                                    \(\lim_{x \to 2} (x \cdot (x + 1)) = \lim_{x \to 2} x \cdot \lim_{x \to 2} (x + 1) = 2 \cdot 3 = 6\)
-                                </div>
-                            </li>
-                            <li class="mb-3">
-                                <div>Limit pembagian fungsi sama dengan hasil pembagian dari limit masing-masing fungsi.</div>
-                                <div class="notation">
-                                    \[\lim_{x \to c} \frac{f(x)}{g(x)} = \frac{\lim_{x \to c} f(x)}{\lim_{x \to c} g(x)}\]
-                                </div>
-                                <div class="notation d-inline">
-                                    <span>Contoh:</span>
-                                    \(\lim_{x \to 2} \frac{x}{x + 1} = \frac{\lim_{x \to 2} x}{\lim_{x \to 2} (x + 1)} = \frac{2}{3}\)
-                                </div>
-                            </li>
-                        </ul>
-                    </li>                        
+                        <div>Limit dari sebuah fungsi yang dikalikan konstanta adalah konstanta tersebut dikalikan dengan limit fungsi.</div>
+                        <div class="notation">
+                            \[\lim_{x \to c} [k \cdot f(x)] = k \cdot \lim_{x \to c} f(x)\]
+                        </div>
+                        <div class="notation d-inline">
+                            <span>Contoh:</span>
+                            \(\lim_{x \to 1} 3x = 3 \cdot \lim_{x \to 1} x = 3 \cdot 1 = 3\)
+                        </div>
+                    </li>
+                    <li class="mb-3">
+                        <div>Limit perkalian fungsi sama dengan hasil kali dari limit masing-masing fungsi.</div>
+                        <div class="notation">
+                            \[\lim_{x \to c} [f(x) \cdot g(x)] = \lim_{x \to c} f(x) \cdot \lim_{x \to c} g(x)\]
+                        </div>
+                        <div class="notation d-inline">
+                            <span>Contoh:</span>
+                            \(\lim_{x \to 2} (x \cdot (x + 1)) = \lim_{x \to 2} x \cdot \lim_{x \to 2} (x + 1) = 2 \cdot 3 = 6\)
+                        </div>
+                    </li>
+                    <li class="mb-3">
+                        <div>Limit pembagian fungsi sama dengan hasil pembagian dari limit masing-masing fungsi.</div>
+                        <div class="notation">
+                            \[\lim_{x \to c} \frac{f(x)}{g(x)} = \frac{\lim_{x \to c} f(x)}{\lim_{x \to c} g(x)}\]
+                        </div>
+                        <div class="notation d-inline">
+                            <span>Contoh:</span>
+                            \(\lim_{x \to 2} \frac{x}{x + 1} = \frac{\lim_{x \to 2} x}{\lim_{x \to 2} (x + 1)} = \frac{2}{3}\)
+                        </div>
+                    </li>                     
                 </ol>
             </div>
         </div>
     </div>
 </div>
 
-<script>
+{{-- <script>
     document.addEventListener("DOMContentLoaded", function () {
-    if (window.innerWidth <= 768) {
-        document.getElementById('unique-container').classList.remove('unique-container');
-        document.getElementById('unique-container-2').classList.remove('p-2');
-        document.getElementById('unique-container-2').classList.remove('content-wrapper');
-        document.getElementById('unique-container-2').classList.remove('bg-white');
-        document.getElementById('unique-container-2').classList.remove('shadow');
-        document.getElementById('unique-container-2').classList.remove('rounded');
-    }
-});
+        if (window.innerWidth <= 768) {
+            document.getElementById('unique-container').classList.remove('unique-container');
+            document.getElementById('unique-container-2').classList.remove('p-2');
+            document.getElementById('unique-container-2').classList.remove('content-wrapper');
+            document.getElementById('unique-container-2').classList.remove('bg-white');
+            document.getElementById('unique-container-2').classList.remove('shadow');
+            document.getElementById('unique-container-2').classList.remove('rounded');
+        }
+    });
 
-</script>
+</script> --}}
 
 @endsection

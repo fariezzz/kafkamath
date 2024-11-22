@@ -2,10 +2,10 @@
 
 @section('container')
 <div class="container my-2">
-    <div class="content-wrapper bg-white p-2 shadow rounded">
+    <div class="content-wrapper bg-white shadow rounded">
         <img src="{{ asset('images/banner_limit.png') }}" alt="Kalkulus Limit" class="w-100 mb-4">
         <div class="px-5">
-            <h2 class="mb-4" style="font-size: 55px">Kalkulus Limit Fungsi — Latihan Soal dan Jawaban</h2>
+            <h2 class="mb-4 limit-title" style="font-size: 55px">Kalkulus Limit Fungsi — Latihan Soal dan Jawaban</h2>
 
             <div class="d-flex justify-content-center mb-4 border-bottom pb-2">
                 <button id="btn-soal-1" class="btn btn-link active-tab mx-3">Soal 1</button>
