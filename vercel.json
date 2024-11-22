@@ -6,6 +6,9 @@
     },
     "routes": [
         { "src": "/images/(.*)", "dest": "/public/images/" },
+        { "src": "/css/(.*)", "dest": "/public/css/" },
+        { "src": "/bootstrap/(.*)", "dest": "/public/bootstrap/" },
+        { "src": "/bootstrap-icons/(.*)", "dest": "/public/bootstrap-icons/" },
         { "src": "/build/(.*)", "dest": "/public/build/" },
         { "src": "/(.*)", "dest": "/api/index.php" }
     ],
