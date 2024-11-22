@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-<div class="container my-2">
+<div class="container2 my-2">
     <div class="content-wrapper bg-white shadow rounded">
         <img src="{{ asset('images/banner_limit.png') }}" alt="Kalkulus Limit" class="w-100 mb-4">
         <div class="px-5">

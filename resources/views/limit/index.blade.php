@@ -1,8 +1,8 @@
 @extends('layouts.main')
 
 @section('container')
-<div id="unique-container" class="container my-2">
-    <div id="unique-container-2" class="content-wrapper bg-white p-2 shadow rounded">
+<div id="unique-container" class="container2 my-2">
+    <div id="unique-container-2" class="content-wrapper bg-white p-2 shadow rounded w-100">
         <img src="{{ asset('images/banner_limit.png') }}" alt="Kalkulus Limit" class="limit-banner w-100 mb-4">
         <div class="px-5">
     
@@ -94,10 +94,7 @@
                         <div class="notation">
                             \[\lim_{x \to c} k = k\]
                         </div>
-                        <div class="notation d-inline">
-                            <span>Contoh:</span>
-                            \(\lim_{x \to 2} 5 = 5\)
-                        </div>                 
+                        Contoh: \(\lim_{x \to 2} 5 = 5\)                
                     </li>
                     <li class="mb-3">
                         <div>Limit dari variabel \(x\) saat mendekati \(c\) adalah \(c\).</div>
@@ -116,7 +113,7 @@
                         </div>
                         <div class="notation d-inline">
                             <span>Contoh:</span>
-                            \(\lim_{x \to 2} (x + 3) = \lim_{x \to 2} x + \lim_{x \to 2} 3 = 2 + 3 = 5\)
+                            \(\lim_{x \to 2} (x + 3) = \lim_{x \to 2} x + \lim_{x \to 2} 3\)
                         </div>
                     </li>  
                     <li class="mb-3">
@@ -126,7 +123,7 @@
                         </div>
                         <div class="notation d-inline">
                             <span>Contoh:</span>
-                            \(\lim_{x \to 1} 3x = 3 \cdot \lim_{x \to 1} x = 3 \cdot 1 = 3\)
+                            \(\lim_{x \to 1} 3x = 3 \cdot \lim_{x \to 1} x\)
                         </div>
                     </li>
                     <li class="mb-3">
@@ -134,20 +131,14 @@
                         <div class="notation">
                             \[\lim_{x \to c} [f(x) \cdot g(x)] = \lim_{x \to c} f(x) \cdot \lim_{x \to c} g(x)\]
                         </div>
-                        <div class="notation d-inline">
-                            <span>Contoh:</span>
-                            \(\lim_{x \to 2} (x \cdot (x + 1)) = \lim_{x \to 2} x \cdot \lim_{x \to 2} (x + 1) = 2 \cdot 3 = 6\)
-                        </div>
+                        Contoh: \(\lim_{x \to 2} (x \cdot (x + 1)) = \lim_{x \to 2} x \cdot \lim_{x \to 2} (x + 1)\)
                     </li>
                     <li class="mb-3">
                         <div>Limit pembagian fungsi sama dengan hasil pembagian dari limit masing-masing fungsi.</div>
                         <div class="notation">
                             \[\lim_{x \to c} \frac{f(x)}{g(x)} = \frac{\lim_{x \to c} f(x)}{\lim_{x \to c} g(x)}\]
                         </div>
-                        <div class="notation d-inline">
-                            <span>Contoh:</span>
-                            \(\lim_{x \to 2} \frac{x}{x + 1} = \frac{\lim_{x \to 2} x}{\lim_{x \to 2} (x + 1)} = \frac{2}{3}\)
-                        </div>
+                        Contoh: \(\lim_{x \to 2} \frac{x}{x + 1} = \frac{\lim_{x \to 2} x}{\lim_{x \to 2} (x + 1)}\)
                     </li>                     
                 </ol>
             </div>
