@@ -20,9 +20,9 @@
                 <li class="nav-item">
                     <a class="nav-link px-3 mx-2 text-white" href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=CllgCJqZhJlDVzrxLvDNGfQFkmjNbqHgJhnTwqfVSNzwbpTllHKmDxWtszcFNfJVNZJWcvXzStL" target="_blank" rel="noopener noreferrer" style="font-size: 18px; transition: 0.3s;">Kontak</a>
                 </li>            
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a class="nav-link px-3 mx-2 text-white" href="#" style="font-size: 18px; transition: 0.3s;">Tentang Kami</a>
-                </li>
+                </li> --}}
             </ul>
         </div>
     </div>
