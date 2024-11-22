@@ -25,5 +25,13 @@
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
-    }
+    },
+    "builds": [
+    {
+      "src": "api/index.php",
+      "use": "@vercel/php",
+      "config": {
+        "buildCommand": "apt-get update && apt-get install -y libssl1.0.0 libssl-dev"
+      }
+    } ]
 }
