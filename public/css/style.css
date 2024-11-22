@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+.brand {
+    font-family: "Raleway", sans-serif;
+}
+
 body {
     background-color: #f7f9fc;
     font-family: "Roboto", sans-serif;

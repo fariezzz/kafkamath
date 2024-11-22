@@ -10,20 +10,20 @@
       
       <!-- Navbar Links -->
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-              <li class="nav-item">
-                  <a class="nav-link px-3 mx-2 text-white" href="/calc" style="font-size: 18px; transition: 0.3s;">Kalkulator</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link px-3 mx-2 text-white" href="/latihan" style="font-size: 18px; transition: 0.3s;">Latihan</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link px-3 mx-2 text-white" href="https://wa.me/6281573681874?text=Raya%20web%20kamu%20bagus%20banget%20aku%20kasih%20bintang%205%20hehehw" target="_blank" rel="noopener noreferrer" style="font-size: 18px; transition: 0.3s;">Kontak</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link px-3 mx-2 text-white" href="#" style="font-size: 18px; transition: 0.3s;">Tentang Kami</a>
-              </li>
-          </ul>
-      </div>
-  </div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link px-3 mx-2 text-white" href="/calc" style="font-size: 18px; transition: 0.3s;">Kalkulator</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3 mx-2 text-white" href="/latihan" style="font-size: 18px; transition: 0.3s;">Latihan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-3 mx-2 text-white" href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=CllgCJqZhJlDVzrxLvDNGfQFkmjNbqHgJhnTwqfVSNzwbpTllHKmDxWtszcFNfJVNZJWcvXzStL" target="_blank" rel="noopener noreferrer" style="font-size: 18px; transition: 0.3s;">Kontak</a>
+                </li>            
+                <li class="nav-item">
+                    <a class="nav-link px-3 mx-2 text-white" href="#" style="font-size: 18px; transition: 0.3s;">Tentang Kami</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
