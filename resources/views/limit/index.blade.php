@@ -1,12 +1,12 @@
 @extends('layouts.main')
 
 @section('container')
-<div class="container my-2">
-    <div class="content-wrapper bg-white p-2 shadow rounded">
-        <img src="{{ asset('images/banner_limit.png') }}" alt="Kalkulus Limit" class="w-100 mb-4">
+<div id="unique-container" class="unique-container my-0">
+    <div id="unique-container-2" class="content-wrapper bg-white p-2 shadow rounded">
+        <img src="{{ asset('images/banner_limit.png') }}" alt="Kalkulus Limit" class="limit-banner w-100 mb-4">
         <div class="px-5">
     
-            <h2 class="mb-4" style="font-size: 55px">Kalkulus Limit Fungsi — Pengertian dan Sifat-sifatnya</h2>
+            <h2 class="mb-4 limit-title" style="font-size: 50px">Kalkulus Limit Fungsi — Pengertian dan Sifat-Sifatnya</h2>
     
             <div class="section mb-5">
                 <h3 class="section-title">Apa itu Limit?</h3>
@@ -159,5 +159,19 @@
         </div>
     </div>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    if (window.innerWidth <= 768) {
+        document.getElementById('unique-container').classList.remove('unique-container');
+        document.getElementById('unique-container-2').classList.remove('p-2');
+        document.getElementById('unique-container-2').classList.remove('content-wrapper');
+        document.getElementById('unique-container-2').classList.remove('bg-white');
+        document.getElementById('unique-container-2').classList.remove('shadow');
+        document.getElementById('unique-container-2').classList.remove('rounded');
+    }
+});
+
+</script>
 
 @endsection
