@@ -182,6 +182,7 @@ img {
 
     .table {
         font-size: 0.9rem;
+        overflow-x: auto;
     }
 
     .table td, .table th {

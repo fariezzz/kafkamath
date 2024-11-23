@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('limit.index', [
-        'title' => 'Materi',
+        'title' => 'Materi'
     ]);
 });
 
@@ -25,8 +25,10 @@ Route::get('/', function () {
 //     ]);
 // });
 
-Route::get('/calc', function () {
-    return view('calc.index');
+Route::get('/kalkulator', function () {
+    return view('calc.index', [
+        'title' => 'Kalkulator'
+    ]);
 });
 
 Route::get('/latihan', function () {
