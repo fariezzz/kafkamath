@@ -20,7 +20,7 @@
             <a class="nav-link px-3 mx-2 text-white" href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=CllgCJqZhJlDVzrxLvDNGfQFkmjNbqHgJhnTwqfVSNzwbpTllHKmDxWtszcFNfJVNZJWcvXzStL" target="_blank" rel="noopener noreferrer" style="font-size: 18px;">Kontak</a>
           </li> --}}
           <li class="nav-item">
-            <a class="nav-link px-3 mx-2 text-white" href="#" style="font-size: 18px;">Tentang Kami</a>
+            <a class="nav-link px-3 mx-2 text-white" href="/profil" style="font-size: 18px;">Profil Kami</a>
           </li>
         </ul>
       </div>

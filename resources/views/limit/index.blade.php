@@ -78,7 +78,7 @@
                 
                 <p>Dari tabel di atas dapat dilihat, apabila nilai \(x\) semakin “dekat” dengan \(0\), maka \(f(x)\) akan semakin “dekat” dengan \(1\). Dengan catatan bahwa \(f(0) = 1\) adalah sebuah kebetulan. Dengan grafik, dapat digambarkan sebagai berikut.</p>
 
-                <div class="d-flex justify-content-center mb-5">
+                <div class="d-flex justify-content-center my-4">
                     <img src="{{ asset('images/graphic.png') }}" alt="Grafik" class="img-fluid">
                 </div>
                 

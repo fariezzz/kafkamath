@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,11 +20,11 @@ Route::get('/', function () {
     ]);
 });
 
-// Route::get('/limit', function () {
-//     return view('limit.index', [
-//         'title' => 'Kalkulus Limit',
-//     ]);
-// });
+Route::get('/latihan', function () {
+    return view('limit.latihan', [
+        'title' => 'Latihan'
+    ]);
+});
 
 Route::get('/kalkulator', function () {
     return view('calc.index', [
@@ -31,8 +32,4 @@ Route::get('/kalkulator', function () {
     ]);
 });
 
-Route::get('/latihan', function () {
-    return view('limit.latihan', [
-        'title' => 'Latihan'
-    ]);
-});
+Route::get('/profil', [ProfileController::class, 'index']);
