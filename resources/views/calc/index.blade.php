@@ -4,7 +4,13 @@
 <div class="container my-5">
     <h2 class="text-center">Kalkulator Limit</h2>
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-6">
+            <!-- Tampilan Formula -->
+            <div id="display" class="border p-3 bg-light text-center mb-3" style="min-height: 50px;">
+                <span>Masukkan ekspresi untuk memulai</span>
+            </div>
+
+            <!-- Input Form -->
             <div class="form-group mb-3">
                 <label for="functionExpression">Masukkan Ekspresi Fungsi \( f(x) \):</label>
                 <input type="text" id="functionExpression" class="form-control" placeholder="Contoh: x^2 + 3*x + 2">
@@ -14,45 +20,39 @@
                 <input type="number" id="approachingValue" class="form-control" placeholder="Contoh: 3">
             </div>
 
-            <div id="display" class="border p-3 bg-light text-center mb-3" style="min-height: 50px;">
-                <span>Masukkan ekspresi untuk memulai</span>
+            <!-- Tombol Keyboard -->
+            <div id="keyboard" class="calculator-grid border p-3 bg-light mb-3">
+                <!-- Angka -->
+                <button class="btn btn-outline-dark" onclick="addInput('1')">1</button>
+                <button class="btn btn-outline-dark" onclick="addInput('2')">2</button>
+                <button class="btn btn-outline-dark" onclick="addInput('3')">3</button>
+                <button class="btn btn-outline-dark" onclick="addInput('4')">4</button>
+                <button class="btn btn-outline-dark" onclick="addInput('5')">5</button>
+                <button class="btn btn-outline-dark" onclick="addInput('6')">6</button>
+                <button class="btn btn-outline-dark" onclick="addInput('7')">7</button>
+                <button class="btn btn-outline-dark" onclick="addInput('8')">8</button>
+                <button class="btn btn-outline-dark" onclick="addInput('9')">9</button>
+                <button class="btn btn-outline-dark" onclick="addInput('0')">0</button>
+
+                <!-- Operator -->
+                <button class="btn btn-outline-dark" onclick="addInput('+')">+</button>
+                <button class="btn btn-outline-dark" onclick="addInput('-')">−</button>
+                <button class="btn btn-outline-dark" onclick="addInput('*')">\(\times\)</button>
+                <button class="btn btn-outline-dark" onclick="addInput('/')">\(\div\)</button>
+                <button class="btn btn-outline-dark" onclick="addInput('^')">^</button>
+                <button class="btn btn-outline-dark" onclick="addInput('sqrt(')">\( \sqrt{} \)</button>
+                <button class="btn btn-outline-dark" onclick="addInput('(')">(</button>
+                <button class="btn btn-outline-dark" onclick="addInput(')')">)</button>
+                <button class="btn btn-outline-dark" onclick="addInput('x')">\( x \)</button>
             </div>
 
-            <div id="keyboard" class="d-flex flex-wrap justify-content-center align-items-center mb-3">
-                <div class="keyboard-group">
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('0')">0</button>
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('1')">1</button>
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('2')">2</button>
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('3')">3</button>
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('4')">4</button>
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('5')">5</button>
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('6')">6</button>
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('7')">7</button>
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('8')">8</button>
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('9')">9</button>
-                </div>
-
-                <div class="keyboard-group">
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('x')">\( x \)</button>
-                </div>
-
-                <div class="keyboard-group">
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('+')">+</button>
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('-')">−</button>
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('*')">\(\times\)</button>
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('/')">\(\div\)</button>
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('^')">^</button>
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('sqrt(')">\( \sqrt{} \)</button>
-                    <button class="btn btn-outline-dark m-1" onclick="addInput('(')">(</button>
-                    <button class="btn btn-outline-dark m-1" onclick="addInput(')')">)</button>
-                </div>
-            </div>
-
+            <!-- Tombol Operasi -->
             <div class="d-flex justify-content-center gap-3 mb-3">
-                <button class="btn btn-danger" onclick="clearAll()">Hapus Semua</button>
-                <button class="btn btn-success" onclick="calculateLimit()">Hitung</button>
+                <button class="btn btn-danger w-50" onclick="clearAll()">Hapus Semua</button>
+                <button class="btn btn-success w-50" onclick="calculateLimit()">Hitung</button>
             </div>
 
+            <!-- Hasil -->
             <div>
                 <label for="result">Hasil:</label>
                 <div id="result" class="border p-3 bg-light text-center" style="min-height: 50px;"></div>
@@ -60,6 +60,27 @@
         </div>
     </div>
 </div>
+
+<!-- Tambahkan CSS -->
+<style>
+    .calculator-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+    }
+
+    .calculator-grid button {
+        height: 50px;
+        font-size: 18px;
+        border-radius: 5px;
+    }
+
+    @media (max-width: 576px) {
+        .calculator-grid {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+</style>
 
 <script>
     let activeInput = null;
@@ -99,20 +120,16 @@
         const point = document.getElementById("approachingValue").value;
         const display = document.getElementById("display");
 
-        // Konversi notasi khusus ke format LaTeX
-        let latexFunc = func
-            .replace(/sqrt\(/g, "\\sqrt{") // Ubah "sqrt(" menjadi "\sqrt{"
-            .replace(/\)/g, "}");         // Tutup kurung ")" menjadi "}"
+        let latexFunc = func;
 
-        // Template default
+        latexFunc = latexFunc.replace(/sqrt\(([^()]+)\)/g, "\\sqrt{$1}");
+
         const template = latexFunc || point 
             ? `\\lim_{x \\to ${point || ''}} (${latexFunc || ''})` 
             : `\\lim_{x \\to c} f(x)`;
 
-        // Render ke elemen `display` menggunakan KaTeX
         display.innerHTML = katex.renderToString(template, { throwOnError: false });
     }
-
 
     function calculateLimit() {
         const func = document.getElementById("functionExpression").value;
