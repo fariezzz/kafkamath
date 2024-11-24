@@ -13,8 +13,8 @@
                 <p>Limit memiliki arti kata yaitu batas, membatasi, mempersempit, atau mendekatkan. Dalam kehidupan sehari-hari, orang sering dihadapkan pada masalah-masalah pendekatan suatu nilai/besaran.</p>
                 
                 <div>Limit dari suatu fungsi menggambarkan nilai yang didekati oleh fungsi tersebut saat variabelnya mendekati nilai tertentu. Dalam notasi matematika, limit dari fungsi  \(f(x)\) saat \(x\) mendekati \(a\) dapat dituliskan sebagai:</div>
-                <div class="notation mx-3">
-                    \[\lim_{x \to a} f(x) = L\]
+                <div class="mx-3 p-2">
+                    \(\lim_{x \to a} f(x) = L\)
                 </div>
                 <p>Artinya, ketika \(x\) mendekati \(a\), maka nilai fungsi \(f(x)\) akan mendekati nilai \(L\), jika \(L\) adalah nilai limitnya.</p>
 
@@ -93,73 +93,63 @@
                 <ol>
                     <li class="mb-3">
                         <div>Limit dari sebuah konstanta adalah konstanta itu sendiri.</div>
-                        <div class="notation-container">
-                            <div class="notation">
-                                \[\lim_{x \to c} k = k\]
-                            </div>
+                        <div class="notation-container p-1">
+                            \(\lim_{x \to c} k = k\)
                         </div>
                         <span>Contoh: </span>
-                        <div class="notation-container">
+                        <div class="notation-container p-1">
                             \(\lim_{x \to 2} 5 = 5\)                
                         </div>
                     </li>
                     <li class="mb-3">
                         <div>Limit dari variabel \(x\) saat mendekati \(c\) adalah \(c\).</div>
-                        <div class="notation-container">
-                            <div class="notation">
-                                \[\lim_{x \to c} x = c\]
-                            </div>
+                        <div class="notation-container p-1">
+                            \(\lim_{x \to c} x = c\)
                         </div>
                         <span>Contoh: </span>
-                        <div class="notation-container">
+                        <div class="notation-container p-1">
                             \(\lim_{x \to 3} x = 3\)
                         </div>
                     </li>
                     <li class="mb-4">
                         <div class="mt-3">Limit penjumlahan fungsi sama dengan jumlah dari limit masing-masing fungsi.</div>
-                        <div class="notation-container">
-                            <div class="notation">
-                                \[\lim_{x \to c} [f(x) + g(x)] = \lim_{x \to c} f(x) + \lim_{x \to c} g(x)\]
-                            </div>
+                        <div class="notation-container p-1">
+                            \(\lim_{x \to c} [f(x) + g(x)] = \lim_{x \to c} f(x) + \lim_{x \to c} g(x)\)
                         </div>
                         <span>Contoh: </span>
-                        <div class="notation-container">
+                        <div class="notation-container p-1">
                             \(\lim_{x \to 2} (x + 3) = \lim_{x \to 2} x + \lim_{x \to 2} 3\)
                         </div>
                     </li>  
                     <li class="mb-3">
                         <div>Limit dari sebuah fungsi yang dikalikan konstanta adalah konstanta tersebut dikalikan dengan limit fungsi.</div>
-                        <div class="notation-container">
-                            <div class="notation">
-                                \[\lim_{x \to c} [k \cdot f(x)] = k \cdot \lim_{x \to c} f(x)\]
-                            </div>
+                        <div class="notation-container p-1">
+                            \(\lim_{x \to c} [k \cdot f(x)] = k \cdot \lim_{x \to c} f(x)\)
                         </div>
                         <span>Contoh: </span>
-                        <div class="notation-container">
+                        <div class="notation-container p-1">
                             \(\lim_{x \to 1} 3x = 3 \cdot \lim_{x \to 1} x\)
                         </div>
                     </li>
                     <li class="mb-3">
                         <div>Limit perkalian fungsi sama dengan hasil kali dari limit masing-masing fungsi.</div>
-                        <div class="notation-container">
-                            <div class="notation">
-                                \[\lim_{x \to c} [f(x) \cdot g(x)] = \lim_{x \to c} f(x) \cdot \lim_{x \to c} g(x)\]
-                            </div>
+                        <div class="notation-container p-1">
+                            \(\lim_{x \to c} [f(x) \cdot g(x)] = \lim_{x \to c} f(x) \cdot \lim_{x \to c} g(x)\)
                         </div>
                         <span>Contoh:</span>
-                        <div class="notation-container">
+                        <div class="notation-container p-1">
                             \(\lim_{x \to 2} (x \cdot (x + 1)) = \lim_{x \to 2} x \cdot \lim_{x \to 2} (x + 1)\)
                         </div>
                     </li>
                     <li class="mb-3">
                         <div>Limit pembagian fungsi sama dengan hasil pembagian dari limit masing-masing fungsi.</div>
-                        <div class="notation-container">
+                        <div class="notation-container p-1">
                             <div class="notation">
-                            \[\lim_{x \to c} \frac{f(x)}{g(x)} = \frac{\lim_{x \to c} f(x)}{\lim_{x \to c} g(x)}\]
+                            \(\lim_{x \to c} \frac{f(x)}{g(x)} = \frac{\lim_{x \to c} f(x)}{\lim_{x \to c} g(x)}\)
                         </div>
                         </div>
                         <span>Contoh: </span>
-                        <div class="notation-container">
+                        <div class="notation-container p-1">
                             \(\lim_{x \to 2} \frac{x}{x + 1} = \frac{\lim_{x \to 2} x}{\lim_{x \to 2} (x + 1)}\)
                         </div>
                     </li>                     
