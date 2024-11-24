@@ -144,9 +144,7 @@
                     <li class="mb-3">
                         <div>Limit pembagian fungsi sama dengan hasil pembagian dari limit masing-masing fungsi.</div>
                         <div class="notation-container p-1">
-                            <div class="notation">
                             \(\lim_{x \to c} \frac{f(x)}{g(x)} = \frac{\lim_{x \to c} f(x)}{\lim_{x \to c} g(x)}\)
-                        </div>
                         </div>
                         <span>Contoh: </span>
                         <div class="notation-container p-1">
