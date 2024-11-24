@@ -69,8 +69,8 @@ h3, h4 {
 }
 
 .notation, .problem, .solution {
-    font-family: "KaTeX_Main", serif !important;
-    font-size: 1.1em !important;
+    /* font-family: "KaTeX_Main", serif !important;
+    font-size: 1.1em !important; */
     display: flex;
     /* justify-content: left !important; */
 }
@@ -88,7 +88,28 @@ h3, h4 {
 
 @media (min-width: 768px) {
     .no-1 {
-        font-size: 1.6rem;
+        font-size: 19.7px;
+    }
+}
+
+@media (min-width: 992px) {
+    .icons {
+        display: none;
+    }
+
+    .nav-link {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 0.9rem;
+        margin-right: 0.9rem;
+    }
+
+    .brand {
+        font-family: "Raleway", sans-serif;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 }
 
@@ -128,7 +149,7 @@ img {
 }
 
 .limit-banner {
-    margin-top: 20px;
+    margin-top: 1px;
 }
 
 .video {
@@ -229,6 +250,7 @@ img {
 @media (max-width: 768px) {
     body {
         font-size: 15px !important;
+        padding-top: 64px;
     }
 
     .btn-link {
@@ -323,6 +345,6 @@ img {
     }
 
     .no-1 {
-        font-size: 18.6px;
+        font-size: 14.2px;
     }
 }

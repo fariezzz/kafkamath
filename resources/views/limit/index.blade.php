@@ -2,7 +2,7 @@
 
 @section('container')
 <div class="container2 my-2">
-    <div class="content-wrapper bg-white shadow rounded w-100">
+    <div class="content-wrapper bg-white shadow rounded w-100" style="padding-bottom: 1.75rem">
         <img src="{{ asset('images/banner_limit.png') }}" alt="Kalkulus Limit" class="limit-banner w-100 mb-4">
         <div class="px-5">
     
