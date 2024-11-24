@@ -153,40 +153,6 @@
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        document.getElementById('no1').classList.remove('d-none');
-        document.getElementById('no2').classList.remove('d-none');
-        document.getElementById('no3').classList.remove('d-none');
-        document.getElementById('collapse-steps-1').classList.add('show');
-        document.getElementById('collapse-steps-2').classList.add('show');
-        document.getElementById('collapse-steps-3').classList.add('show');
-        document.getElementById('showSteps1').classList.add('d-none');
-        document.getElementById('hideSteps1').classList.remove('d-none');
-        document.getElementById('showSteps2').classList.add('d-none');
-        document.getElementById('hideSteps2').classList.remove('d-none');
-        document.getElementById('showSteps3').classList.add('d-none');
-        document.getElementById('hideSteps3').classList.remove('d-none');
-
-        setTimeout(function () {
-            document.getElementById('no1').classList.remove('d-none');
-            document.getElementById('no2').classList.add('d-none');
-            document.getElementById('no3').classList.add('d-none');
-            document.getElementById('collapse-steps-1').classList.remove('show');
-            document.getElementById('collapse-steps-2').classList.remove('show');
-            document.getElementById('collapse-steps-3').classList.remove('show');
-            document.getElementById('showSteps1').classList.remove('d-none');
-            document.getElementById('hideSteps1').classList.add('d-none');
-            document.getElementById('showSteps2').classList.remove('d-none');
-            document.getElementById('hideSteps2').classList.add('d-none');
-            document.getElementById('showSteps3').classList.remove('d-none');
-            document.getElementById('hideSteps3').classList.add('d-none');
-            document.getElementById('btn-soal-1').classList.add('active-tab');
-            document.getElementById('btn-soal-2').classList.remove('active-tab');
-            document.getElementById('btn-soal-3').classList.remove('active-tab');
-        }, 500);
-    });
-
-    
     document.getElementById('btn-soal-1').addEventListener('click', function() {
         document.getElementById('no1').classList.remove('d-none');
         document.getElementById('no2').classList.add('d-none');
