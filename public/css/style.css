@@ -347,4 +347,8 @@ img {
     .no-1 {
         font-size: 14.2px;
     }
+
+    .notation, .notation-container {
+        font-size: 15px;
+    }
 }
