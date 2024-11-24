@@ -6,8 +6,8 @@
     <div class="profile-container mb-5">
         @foreach($profiles as $profile)
             <div class="card">
-                <img src="{{ asset($profile['photo']) }}" alt="Foto {{ $profile['name'] }}" class="card-img" style="height: 500px">
-                <div class="card-content" style="height: 180px">
+                <img src="{{ asset($profile['photo']) }}" alt="Foto {{ $profile['name'] }}" class="card-img h-100">
+                <div class="card-content h-100">
                     <h3>{{ $profile['name'] }}</h3>
                     <p><strong>NPM:</strong> {{ $profile['nim'] }}</p>
                     <p><strong>Institusi:</strong> {{ $profile['institution'] }}</p>

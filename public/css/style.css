@@ -72,7 +72,7 @@ h3, h4 {
     font-family: "KaTeX_Main", serif !important;
     font-size: 1.1em !important;
     display: flex;
-    justify-content: left !important;
+    /* justify-content: left !important; */
 }
 
 .problem, .solution {
@@ -80,8 +80,16 @@ h3, h4 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-.solution-2 {
-    font-size: 0.9em !important;
+.notation-container {
+    overflow-x: auto;
+    max-width: 100%;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .no-1 {
+        font-size: 1.6rem;
+    }
 }
 
 .table {
@@ -138,6 +146,9 @@ img {
     background-color: transparent;
     border-bottom: 3px solid transparent;
     transition: all 0.3s ease;
+    white-space: nowrap;
+    text-align: center;
+    width: auto;
 }
 
 .btn-link:hover {
@@ -220,6 +231,15 @@ img {
         font-size: 15px !important;
     }
 
+    .btn-link {
+        padding: 5px 15px;
+    }
+
+    .limit-banner {
+        margin-top: 0;
+        border-radius: 0 !important;
+    }
+
     .container2 {
         width: 100%;
         padding-left: 0.25rem;
@@ -271,18 +291,18 @@ img {
     }
 
     .profile-container {
-        display: flex;
-        flex-wrap: nowrap;
+        /* display: flex;
+        flex-wrap: nowrap; */
         gap: 15px;
-        overflow-x: auto; 
+        /* overflow-x: auto;  */
         padding: 1rem;
-        scroll-padding-left: 1rem;
+        /* scroll-padding-left: 1rem;
         scroll-padding-right: 1rem;
         scroll-snap-type: x mandatory;
-        justify-content: flex-start;
+        justify-content: flex-start; */
     }
 
-    .profile-container .card {
+    /* .profile-container .card {
         flex: 0 0 auto;
         width: 250px;
         scroll-snap-align: start;
@@ -292,13 +312,17 @@ img {
         flex: 0 0 auto;
         width: 250px;
         scroll-snap-align: start;
-    }
+    } */
 
-    .profile-container::-webkit-scrollbar {
+    /* .profile-container::-webkit-scrollbar {
         display: none;
-    }
+    } */
 
     .profile-title .brand {
         font-size: 30px !important;
+    }
+
+    .no-1 {
+        font-size: 18.6px;
     }
 }

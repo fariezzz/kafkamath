@@ -1,8 +1,8 @@
 @extends('layouts.main')
 
 @section('container')
-<div id="unique-container" class="container2 my-2">
-    <div id="unique-container-2" class="content-wrapper bg-white p-2 shadow rounded w-100">
+<div class="container2 my-2">
+    <div class="content-wrapper bg-white shadow rounded w-100">
         <img src="{{ asset('images/banner_limit.png') }}" alt="Kalkulus Limit" class="limit-banner w-100 mb-4">
         <div class="px-5">
     
@@ -27,54 +27,56 @@
                 <p>Nilai eksak yang menjadi jawaban pertanyaan di atas sulit ditentukan, bahkan tidak mungkin. Mengapa demikian? Karena kita tidak dapat memberikan kepastian nilai \(x\) yang dimaksud. Meskipun demikian, nilai pendekatan untuk yang dimaksud bisa ditentukan.</p>
 
                 <p>Perhatikan tabel berikut:</p>
-                <table class="table table-bordered border-dark w-100 text-center">
-                    <thead class="table-secondary">
-                        <tr>
-                            <th style="width: 25%;">\(x\)</th>
-                            <th style="width: 25%;">\(f(x)\)</th>
-                            <th style="width: 25%;">\(x\)</th>
-                            <th style="width: 25%;">\(f(x)\)</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>-1</td>
-                            <td>0</td>
-                            <td>1,24</td>
-                            <td>2,24</td>
-                        </tr>
-                        <tr>
-                            <td>-0,55</td>
-                            <td>0,45</td>
-                            <td>0,997</td>
-                            <td>1,997</td>
-                        </tr>
-                        <tr>
-                            <td>-0,125</td>
-                            <td>0,875</td>
-                            <td>0,00195</td>
-                            <td>1,00195</td>
-                        </tr>
-                        <tr>
-                            <td>-0,001</td>
-                            <td>0,999</td>
-                            <td>0,0000015</td>
-                            <td>1,0000015</td>
-                        </tr>
-                        <tr>
-                            <td>-0,000001</td>
-                            <td>0,999999</td>
-                            <td>0,000000001</td>
-                            <td>1,000000001</td>
-                        </tr>
-                        <tr>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="table table-bordered border-dark w-100 text-center">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th style="width: 25%;">\(x\)</th>
+                                <th style="width: 25%;">\(f(x)\)</th>
+                                <th style="width: 25%;">\(x\)</th>
+                                <th style="width: 25%;">\(f(x)\)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>-1</td>
+                                <td>0</td>
+                                <td>1,24</td>
+                                <td>2,24</td>
+                            </tr>
+                            <tr>
+                                <td>-0,55</td>
+                                <td>0,45</td>
+                                <td>0,997</td>
+                                <td>1,997</td>
+                            </tr>
+                            <tr>
+                                <td>-0,125</td>
+                                <td>0,875</td>
+                                <td>0,00195</td>
+                                <td>1,00195</td>
+                            </tr>
+                            <tr>
+                                <td>-0,001</td>
+                                <td>0,999</td>
+                                <td>0,0000015</td>
+                                <td>1,0000015</td>
+                            </tr>
+                            <tr>
+                                <td>-0,000001</td>
+                                <td>0,999999</td>
+                                <td>0,000000001</td>
+                                <td>1,000000001</td>
+                            </tr>
+                            <tr>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                                <td>...</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 
                 <p>Dari tabel di atas dapat dilihat, apabila nilai \(x\) semakin “dekat” dengan \(0\), maka \(f(x)\) akan semakin “dekat” dengan \(1\). Dengan catatan bahwa \(f(0) = 1\) adalah sebuah kebetulan. Dengan grafik, dapat digambarkan sebagai berikut.</p>
 
@@ -91,54 +93,75 @@
                 <ol>
                     <li class="mb-3">
                         <div>Limit dari sebuah konstanta adalah konstanta itu sendiri.</div>
-                        <div class="notation">
-                            \[\lim_{x \to c} k = k\]
+                        <div class="notation-container">
+                            <div class="notation">
+                                \[\lim_{x \to c} k = k\]
+                            </div>
                         </div>
-                        Contoh: \(\lim_{x \to 2} 5 = 5\)                
+                        <span>Contoh: </span>
+                        <div class="notation-container">
+                            \(\lim_{x \to 2} 5 = 5\)                
+                        </div>
                     </li>
                     <li class="mb-3">
                         <div>Limit dari variabel \(x\) saat mendekati \(c\) adalah \(c\).</div>
-                        <div class="notation">
-                            \[\lim_{x \to c} x = c\]
+                        <div class="notation-container">
+                            <div class="notation">
+                                \[\lim_{x \to c} x = c\]
+                            </div>
                         </div>
-                        <div class="notation d-inline">
-                            <span>Contoh:</span>
+                        <span>Contoh: </span>
+                        <div class="notation-container">
                             \(\lim_{x \to 3} x = 3\)
                         </div>
                     </li>
                     <li class="mb-4">
                         <div class="mt-3">Limit penjumlahan fungsi sama dengan jumlah dari limit masing-masing fungsi.</div>
-                        <div class="notation">
-                            \[\lim_{x \to c} [f(x) + g(x)] = \lim_{x \to c} f(x) + \lim_{x \to c} g(x)\]
+                        <div class="notation-container">
+                            <div class="notation">
+                                \[\lim_{x \to c} [f(x) + g(x)] = \lim_{x \to c} f(x) + \lim_{x \to c} g(x)\]
+                            </div>
                         </div>
-                        <div class="notation d-inline">
-                            <span>Contoh:</span>
+                        <span>Contoh: </span>
+                        <div class="notation-container">
                             \(\lim_{x \to 2} (x + 3) = \lim_{x \to 2} x + \lim_{x \to 2} 3\)
                         </div>
                     </li>  
                     <li class="mb-3">
                         <div>Limit dari sebuah fungsi yang dikalikan konstanta adalah konstanta tersebut dikalikan dengan limit fungsi.</div>
-                        <div class="notation">
-                            \[\lim_{x \to c} [k \cdot f(x)] = k \cdot \lim_{x \to c} f(x)\]
+                        <div class="notation-container">
+                            <div class="notation">
+                                \[\lim_{x \to c} [k \cdot f(x)] = k \cdot \lim_{x \to c} f(x)\]
+                            </div>
                         </div>
-                        <div class="notation d-inline">
-                            <span>Contoh:</span>
+                        <span>Contoh: </span>
+                        <div class="notation-container">
                             \(\lim_{x \to 1} 3x = 3 \cdot \lim_{x \to 1} x\)
                         </div>
                     </li>
                     <li class="mb-3">
                         <div>Limit perkalian fungsi sama dengan hasil kali dari limit masing-masing fungsi.</div>
-                        <div class="notation">
-                            \[\lim_{x \to c} [f(x) \cdot g(x)] = \lim_{x \to c} f(x) \cdot \lim_{x \to c} g(x)\]
+                        <div class="notation-container">
+                            <div class="notation">
+                                \[\lim_{x \to c} [f(x) \cdot g(x)] = \lim_{x \to c} f(x) \cdot \lim_{x \to c} g(x)\]
+                            </div>
                         </div>
-                        Contoh: \(\lim_{x \to 2} (x \cdot (x + 1)) = \lim_{x \to 2} x \cdot \lim_{x \to 2} (x + 1)\)
+                        <span>Contoh:</span>
+                        <div class="notation-container">
+                            \(\lim_{x \to 2} (x \cdot (x + 1)) = \lim_{x \to 2} x \cdot \lim_{x \to 2} (x + 1)\)
+                        </div>
                     </li>
                     <li class="mb-3">
                         <div>Limit pembagian fungsi sama dengan hasil pembagian dari limit masing-masing fungsi.</div>
-                        <div class="notation">
+                        <div class="notation-container">
+                            <div class="notation">
                             \[\lim_{x \to c} \frac{f(x)}{g(x)} = \frac{\lim_{x \to c} f(x)}{\lim_{x \to c} g(x)}\]
                         </div>
-                        Contoh: \(\lim_{x \to 2} \frac{x}{x + 1} = \frac{\lim_{x \to 2} x}{\lim_{x \to 2} (x + 1)}\)
+                        </div>
+                        <span>Contoh: </span>
+                        <div class="notation-container">
+                            \(\lim_{x \to 2} \frac{x}{x + 1} = \frac{\lim_{x \to 2} x}{\lim_{x \to 2} (x + 1)}\)
+                        </div>
                     </li>                     
                 </ol>
             </div>
