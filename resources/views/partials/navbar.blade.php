@@ -11,10 +11,13 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
+            <a class="nav-link text-white" href="/materi" style="font-size: 18px;"><span class="icons"><i class="bi bi-book-half"></i></span> Materi</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link text-white" href="/kalkulator" style="font-size: 18px;"><span class="icons"><i class="bi bi-calculator-fill"></i></span> Kalkulator</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="/latihan" style="font-size: 18px;"><span class="icons"><i class="bi bi-book-half"></i></span> Latihan</a>
+            <a class="nav-link text-white" href="/latihan" style="font-size: 18px;"><span class="icons"><i class="bi bi-pencil-fill"></i></span> Latihan</a>
           </li>
           {{-- <li class="nav-item">
             <a class="nav-link px-3 mx-2 text-white" href="https://mail.google.com/mail/u/0/?pli=1#inbox?compose=CllgCJqZhJlDVzrxLvDNGfQFkmjNbqHgJhnTwqfVSNzwbpTllHKmDxWtszcFNfJVNZJWcvXzStL" target="_blank" rel="noopener noreferrer" style="font-size: 18px;">Kontak</a>

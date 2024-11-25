@@ -15,6 +15,12 @@ use App\Http\Controllers\ProfileController;
 */
 
 Route::get('/', function () {
+    return view('index', [
+        'title' => 'Landing Page'
+    ]);
+});
+
+Route::get('/materi', function () {
     return view('limit.index', [
         'title' => 'Materi'
     ]);
