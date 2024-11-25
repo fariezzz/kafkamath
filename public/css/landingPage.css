@@ -129,7 +129,7 @@ body {
     border-top-right-radius: 10px;
 }
 
-.card-img-container:hover .overlay {
+.card:hover .overlay {
     opacity: 1;
 }
 
