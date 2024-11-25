@@ -94,10 +94,10 @@
                 <div class="col-md-4 mb-4">
                     <h5 class="mb-3">Ikuti Kami</h5>
                     <div>
-                        <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
-                        <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
-                        <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-4"></i></a>
-                        <a href="#" class="text-light"><i class="bi bi-youtube fs-4"></i></a>
+                        <a href="https://web.facebook.com/kafkamath/" class="text-light me-3" target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook fs-4"></i></a>
+                        <a href="https://x.com/kafkamath_" class="text-light me-3" target="_blank" rel="noopener noreferrer"><i class="bi bi-twitter fs-4"></i></a>
+                        <a href="https://www.instagram.com/kafkamath" class="text-light me-3" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram fs-4"></i></a>
+                        <a href="https://www.youtube.com/@KafkaMath" class="text-light" target="_blank" rel="noopener noreferrer"><i class="bi bi-youtube fs-4"></i></a>
                     </div>
                 </div>
             </div>
