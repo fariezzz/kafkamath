@@ -86,6 +86,10 @@ h3, h4 {
     padding: 0;
 }
 
+.brand-profile {
+    font-family: "Raleway", sans-serif;
+}
+
 @media (min-width: 768px) {
     .no-1 {
         font-size: 19.7px;
@@ -340,7 +344,7 @@ img {
         display: none;
     } */
 
-    .profile-title .brand {
+    .profile-title .brand-profile {
         font-size: 30px !important;
     }
 
